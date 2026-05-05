@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>shin design — 個人事業のためのウェブサイト制作</title>
+<meta name="description" content="個人で営まれるお店・事業のための、シンプルで読みやすいウェブサイトを制作しています。買い切り15万円より承ります。" />
+
+<meta property="og:title" content="shin design — 個人事業のためのウェブサイト制作" />
+<meta property="og:description" content="個人で営まれるお店・事業のための、シンプルで読みやすいウェブサイトを制作しています。" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://tema-zero.jp/" />
+
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@300;500&family=Noto+Sans+JP:wght@300;400;500&display=swap" rel="stylesheet" />
+<style>
+  :root {
+    --bg: #fafaf7;
+    --paper: #ffffff;
+    --ink: #1f2520;
+    --soft: #5a635c;
+    --accent: #6b8068;
+    --line: #e5e3dd;
+  }
+  body { background: var(--bg); color: var(--ink); font-family: 'Noto Sans JP', sans-serif; font-weight: 300; line-height: 1.85; letter-spacing: 0.02em; }
+  .en { font-family: 'Cormorant', serif; letter-spacing: 0.18em; }
+  .accent { color: var(--accent); }
+  .soft { color: var(--soft); }
+  .paper { background: var(--paper); }
+  .border-line { border-color: var(--line); }
+  .ornament { width: 32px; height: 1px; background: var(--accent); margin: 20px auto; }
+</style>
+</head>
+<body>
+
+<!-- Header -->
+<header class="absolute top-0 left-0 right-0 z-10 px-6 py-6">
+  <div class="max-w-5xl mx-auto flex justify-between items-center">
+    <div>
+      <div class="en text-xl accent leading-none">shin design</div>
+      <div class="text-[10px] tracking-widest mt-1 soft">WEBSITE DESIGN FOR INDIVIDUALS</div>
+    </div>
+    <a href="#contact" class="text-xs border border-current px-4 py-2 hover:bg-[var(--ink)] hover:text-[var(--bg)] transition">CONTACT</a>
+  </div>
+</header>
+
+<!-- Hero -->
+<section class="min-h-[90vh] flex items-center px-6 pt-24 pb-16">
+  <div class="max-w-3xl mx-auto text-center">
+    <p class="en text-sm accent tracking-[0.4em] mb-8">— FOR INDIVIDUAL BUSINESSES —</p>
+    <h1 class="text-3xl md:text-5xl leading-[1.6] mb-10 font-medium">
+      個人で営むお店のための、<br />
+      <span class="accent">誠実な</span>ウェブサイト制作。
+    </h1>
+    <div class="ornament"></div>
+    <p class="leading-loose text-sm md:text-base soft max-w-xl mx-auto">
+      派手な仕掛けではなく、<br />
+      お店の世界観をそのまま伝えるシンプルなデザイン。<br />
+      個人で営まれるカフェ・美容室・工務店などのために、<br class="hidden md:block" />
+      ひとつひとつ丁寧にお作りしています。
+    </p>
+  </div>
+</section>
+
+<!-- About -->
+<section id="about" class="paper py-24 px-6 border-t border-line">
+  <div class="max-w-3xl mx-auto">
+    <p class="en text-sm accent tracking-[0.4em] text-center">ABOUT</p>
+    <h2 class="text-2xl md:text-3xl mt-3 mb-8 text-center font-medium">わたしのこと</h2>
+    <div class="ornament"></div>
+    <div class="text-sm md:text-base leading-loose space-y-5">
+      <p>
+        はじめまして、<span class="accent font-medium">石川しん</span>と申します。<br />
+        個人事業主として、ウェブサイトの制作・運用をおこなっています。
+      </p>
+      <p>
+        本業は別にあるため、お引き受けできるお客様の数には限りがありますが、<br class="hidden md:block" />
+        その分、お一人おひとりのお店と丁寧に向き合うことを大切にしています。
+      </p>
+      <p>
+        派手なデザインや派手な機能は得意ではありません。<br />
+        ただ、お店の佇まいや店主のお人柄が、訪れる方にきちんと伝わるサイトを、<br class="hidden md:block" />
+        誠実にお作りすることはお約束します。
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- Services -->
+<section id="services" class="py-24 px-6">
+  <div class="max-w-4xl mx-auto">
+    <p class="en text-sm accent tracking-[0.4em] text-center">SERVICES</p>
+    <h2 class="text-2xl md:text-3xl mt-3 mb-8 text-center font-medium">サービス内容</h2>
+    <div class="ornament"></div>
+
+    <div class="grid md:grid-cols-2 gap-6 mt-12">
+      <div class="paper p-8 border border-line">
+        <p class="en text-xs accent tracking-widest mb-3">— 01 —</p>
+        <h3 class="text-lg font-medium mb-3">ウェブサイト制作</h3>
+        <p class="text-2xl en accent mb-4">¥150,000<span class="text-xs soft ml-2">(税込)</span></p>
+        <ul class="text-sm leading-loose space-y-1 soft">
+          <li>・1ページ完結型のシンプルなサイト</li>
+          <li>・スマートフォン対応</li>
+          <li>・お問い合わせフォーム</li>
+          <li>・ドメイン取得サポート</li>
+          <li>・公開後1ヶ月の修正対応込</li>
+        </ul>
+      </div>
+
+      <div class="paper p-8 border border-line">
+        <p class="en text-xs accent tracking-widest mb-3">— 02 —</p>
+        <h3 class="text-lg font-medium mb-3">月額運用</h3>
+        <p class="text-2xl en accent mb-4">¥3,000<span class="text-xs soft ml-2">/月 (税込)〜</span></p>
+        <ul class="text-sm leading-loose space-y-1 soft">
+          <li>・サーバー・ドメイン代込み</li>
+          <li>・サイトの稼働監視</li>
+          <li>・営業時間や定休日の更新対応</li>
+          <li>・大きな改修は別途見積もり</li>
+        </ul>
+      </div>
+    </div>
+
+    <p class="text-xs soft text-center mt-10 leading-loose">
+      ※ 大幅な改修・新規ページ追加・予約システム等は、内容に応じて別途お見積もりさせていただきます。<br />
+      まずはご相談ください。
+    </p>
+  </div>
+</section>
+
+<!-- Approach -->
+<section class="paper py-24 px-6 border-t border-line">
+  <div class="max-w-4xl mx-auto">
+    <p class="en text-sm accent tracking-[0.4em] text-center">APPROACH</p>
+    <h2 class="text-2xl md:text-3xl mt-3 mb-8 text-center font-medium">大切にしていること</h2>
+    <div class="ornament"></div>
+
+    <div class="grid md:grid-cols-3 gap-8 mt-12 text-center">
+      <div>
+        <p class="en text-3xl accent mb-3">01</p>
+        <h3 class="text-base font-medium mb-3">押し売りはしない</h3>
+        <p class="text-xs soft leading-loose">
+          初回は試作版をお見せして、<br />
+          気に入っていただけた時のみ<br />
+          お話を進めます。
+        </p>
+      </div>
+      <div>
+        <p class="en text-3xl accent mb-3">02</p>
+        <h3 class="text-base font-medium mb-3">明朗会計</h3>
+        <p class="text-xs soft leading-loose">
+          隠れた追加費用は一切なし。<br />
+          月額運用も最低限の<br />
+          サーバー代+αで設定。
+        </p>
+      </div>
+      <div>
+        <p class="en text-3xl accent mb-3">03</p>
+        <h3 class="text-base font-medium mb-3">永く使えるサイト</h3>
+        <p class="text-xs soft leading-loose">
+          流行を追わず、<br />
+          5年・10年と読み続けられる<br />
+          落ち着いたデザイン。
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Works (placeholder) -->
+<section id="works" class="py-24 px-6">
+  <div class="max-w-4xl mx-auto text-center">
+    <p class="en text-sm accent tracking-[0.4em]">WORKS</p>
+    <h2 class="text-2xl md:text-3xl mt-3 mb-8 font-medium">制作実績</h2>
+    <div class="ornament"></div>
+    <p class="text-sm soft leading-loose mt-12">
+      現在、新規のお客様を募集しております。<br />
+      実績は順次掲載予定です。<br /><br />
+      事前に試作のサイトをお見せしますので、<br class="hidden md:block" />
+      お気軽にお問い合わせください。
+    </p>
+  </div>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="bg-[var(--ink)] text-[var(--bg)] py-24 px-6">
+  <div class="max-w-3xl mx-auto text-center">
+    <p class="en text-sm tracking-[0.4em]" style="color:#a8b39f;">CONTACT</p>
+    <h2 class="text-2xl md:text-3xl mt-3 mb-8 font-medium">お問い合わせ</h2>
+    <div class="w-8 h-px bg-[var(--accent)] mx-auto mb-10"></div>
+
+    <p class="text-sm leading-loose opacity-90 mb-10">
+      お見積もりやご相談は、メールで承っております。<br />
+      個人事業のため、ご返信に1〜2営業日いただく場合があります。
+    </p>
+
+    <div class="space-y-4 text-base">
+      <div>
+        <p class="en text-xs opacity-70 tracking-widest mb-1">EMAIL</p>
+        <a href="mailto:info@tema-zero.jp" class="hover:opacity-80">info@tema-zero.jp</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="py-8 px-6 text-xs text-center soft">
+  <div class="max-w-5xl mx-auto">
+    <span class="en">shin design</span> ・ © 2026 ・ ウェブサイトの制作・運用は誠実に。
+  </div>
+</footer>
+
+</body>
+</html>
