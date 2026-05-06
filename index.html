@@ -125,6 +125,7 @@
     --accent: #5d7660;
     --line: #e5e3dd;
   }
+  html { scroll-behavior: smooth; scroll-padding-top: 4rem; }
   body { background: var(--bg); color: var(--ink); font-family: 'Noto Sans JP', sans-serif; font-weight: 400; line-height: 1.8; letter-spacing: 0.01em; }
   .en { font-family: 'Cormorant', serif; letter-spacing: 0.18em; }
   .accent { color: var(--accent); }
@@ -137,15 +138,23 @@
 <body>
 
 <!-- Header -->
-<header class="absolute top-0 left-0 right-0 z-10 px-4 md:px-6 py-6">
-  <div class="max-w-5xl mx-auto flex justify-between items-center">
-    <div>
-      <div class="en text-xl accent leading-none">tema zero</div>
-      <div class="text-[10px] tracking-widest mt-1 soft">個人事業のためのウェブサイト制作</div>
-    </div>
-    <a href="#contact" class="text-xs border border-current px-4 py-2 hover:bg-[var(--ink)] hover:text-[var(--bg)] transition">CONTACT</a>
+<header class="fixed top-0 left-0 right-0 z-50 px-4 md:px-6 py-4 md:py-5 backdrop-blur" style="background: rgba(250,250,247,0.85);">
+  <div class="max-w-5xl mx-auto flex justify-between items-center gap-3">
+    <a href="#top" class="shrink-0">
+      <div class="en text-lg md:text-xl accent leading-none">tema zero</div>
+      <div class="text-[9px] md:text-[10px] tracking-widest mt-1 soft hidden sm:block">個人事業のためのウェブサイト制作</div>
+    </a>
+    <nav class="flex items-center gap-3 md:gap-5 text-xs">
+      <a href="#services" class="hover:accent transition hidden sm:inline">料金</a>
+      <a href="#process" class="hover:accent transition hidden sm:inline">制作の流れ</a>
+      <a href="#faq" class="hover:accent transition hidden md:inline">ご質問</a>
+      <a href="#contact" class="border border-current px-3 md:px-4 py-1.5 md:py-2 hover:bg-[var(--ink)] hover:text-[var(--bg)] transition whitespace-nowrap">お問い合わせ</a>
+    </nav>
   </div>
 </header>
+
+<!-- Anchor for top -->
+<div id="top"></div>
 
 <!-- Hero -->
 <section class="min-h-[88vh] md:min-h-[90vh] flex items-center px-4 md:px-6 pt-20 pb-12 md:pt-24 md:pb-16">
@@ -153,14 +162,24 @@
     <p class="en text-[10px] sm:text-sm accent tracking-[0.25em] sm:tracking-[0.4em] mb-8 whitespace-nowrap">FOR INDIVIDUAL BUSINESSES</p>
     <h1 class="text-3xl sm:text-4xl md:text-5xl leading-[1.5] md:leading-[1.6] mb-8 md:mb-10 font-medium">
       個人で営むお店のための、<br class="hidden md:block" />
-      <span class="accent">誠実な</span>ウェブサイト制作。
+      <span class="accent">ウェブサイト制作</span>。
     </h1>
     <div class="ornament"></div>
     <p class="leading-relaxed md:leading-loose text-sm md:text-base soft max-w-xl mx-auto">
-      派手な仕掛けではなく、<br class="hidden md:block" />
-      お店の世界観をそのまま伝えるシンプルなデザイン。<br class="hidden md:block" />
-      AI検索の時代にも長く見つけてもらえる設計で、<br class="hidden md:block" />
-      ひとつひとつ丁寧にお作りしています。
+      派手な仕掛けではなく、お店の世界観をそのまま伝えるシンプルなデザイン。
+      AI検索の時代にも長く見つけてもらえる設計で、ひとつひとつ丁寧にお作りしています。
+    </p>
+  </div>
+</section>
+
+<!-- Promise (このサイトで一番伝えたい約束) -->
+<section class="paper border-y border-line py-10 md:py-14 px-4 md:px-6">
+  <div class="max-w-2xl mx-auto text-center">
+    <p class="en text-[10px] sm:text-xs accent tracking-[0.3em] mb-3">OUR PROMISE</p>
+    <p class="text-base md:text-lg leading-relaxed md:leading-loose">
+      <span class="accent font-medium">試作版を先にお作りしてからお見せします。</span><br class="hidden md:block" />
+      ご覧いただいて、気に召さなければお断りいただいて結構です。<br class="hidden md:block" />
+      <span class="accent font-medium">試作版のお代はいただきません。</span>
     </p>
   </div>
 </section>
@@ -173,22 +192,16 @@
     <div class="ornament"></div>
     <div class="text-sm md:text-base leading-relaxed md:leading-loose space-y-5">
       <p>
-        はじめまして、<span class="accent font-medium">石川</span>と申します。<br class="hidden md:block" />
-        『<span class="en accent">tema zero</span>』という屋号で、<br class="hidden md:block" />
-        個人事業として、ウェブサイトの制作・運用をおこなっています。
+        はじめまして、<span class="accent font-medium">石川</span>と申します。
+        『<span class="en accent">tema zero</span>』という屋号で、個人事業として、
+        ウェブサイトの制作・運用をおこなっています。
       </p>
       <p>
-        本業は別にあるため、お引き受けできるお客様の数には限りがありますが、<br class="hidden md:block" />
-        その分、お一人おひとりのお店と丁寧に向き合うことを大切にしています。
+        お一人おひとりのお店と丁寧に向き合うことを大切にしています。
       </p>
       <p>
-        派手なデザインや派手な機能は得意ではありません。<br class="hidden md:block" />
-        ただ、お店の佇まいや店主のお人柄が、訪れる方にきちんと伝わるサイトを、<br class="hidden md:block" />
-        誠実にお作りすることはお約束します。
-      </p>
-      <p>
-        ご依頼前に <span class="accent">試作版のサイト</span> をお見せしますので、<br class="hidden md:block" />
-        実物を見てから、続きを進めるかご判断いただけます。
+        お店の佇まいや店主のお人柄が、訪れる方にきちんと伝わるサイトを、
+        ひとつひとつお作りします。
       </p>
     </div>
   </div>
@@ -353,8 +366,7 @@
     </div>
 
     <p class="text-xs soft text-center mt-12 leading-relaxed md:leading-loose">
-      ※ 実物の試作版を見てから、続きを進めるかご判断いただけます。<br class="hidden md:block" />
-      気に召さなければお断りいただいて問題ありません。お代もいただきません。
+      全体で約 2 〜 3 週間でご納品。お支払いは納品後で結構です。
     </p>
   </div>
 </section>
@@ -401,20 +413,6 @@
   </div>
 </section>
 
-<!-- Works (placeholder) -->
-<section id="works" class="py-16 md:py-24 px-4 md:px-6">
-  <div class="max-w-4xl mx-auto text-center">
-    <p class="en text-sm accent tracking-[0.4em]">WORKS</p>
-    <h2 class="text-2xl md:text-3xl mt-3 mb-8 font-medium">制作実績</h2>
-    <div class="ornament"></div>
-    <p class="text-sm soft leading-relaxed md:leading-loose mt-12">
-      現在、新規のお客様を募集しております。<br class="hidden md:block" />
-      実績は順次掲載予定です。<br class="hidden md:block" /><br class="hidden md:block" />
-      事前に試作のサイトをお見せしますので、<br class="hidden md:block" />
-      お気軽にお問い合わせください。
-    </p>
-  </div>
-</section>
 
 <!-- FAQ -->
 <section id="faq" class="paper py-16 md:py-24 px-4 md:px-6 border-t border-line">
@@ -494,7 +492,7 @@
 <!-- Footer -->
 <footer class="py-8 px-4 md:px-6 text-xs text-center soft">
   <div class="max-w-5xl mx-auto">
-    <span class="en">tema zero</span> ・ © 2026 ・ ウェブサイトの制作・運用は誠実に。
+    <span class="en">tema zero</span> ・ © 2026 ・ ウェブサイトの制作・運用を、ひとつひとつ丁寧に。
   </div>
 </footer>
 
